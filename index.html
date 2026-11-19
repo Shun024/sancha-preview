@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SANcha — High-Quality Matcha for Clean Energy · London</title>
+<meta name="description" content="High-quality matcha for clean, steady energy — no jitters, no 3pm slump. Founded by three friends in London. Shop IKI &amp; YUAN tins &amp; wholesale.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#293D30">
+<link rel="canonical" href="https://sanchamatcha.co.uk/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SANcha">
+<meta property="og:title" content="SANcha — High-Quality Matcha · London">
+<meta property="og:description" content="High-quality matcha for clean, steady energy. Founded by three friends in London. Shop tins & wholesale supply.">
+<meta property="og:url" content="https://sanchamatcha.co.uk/">
+<meta property="og:image" content="https://sanchamatcha.co.uk/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SANcha — hand-drawn matcha bowl logo">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SANcha — High-Quality Matcha · London">
+<meta name="twitter:description" content="High-quality matcha for clean, steady energy. Founded by three friends in London.">
+<meta name="twitter:image" content="https://sanchamatcha.co.uk/assets/og-image.png">
+<meta name="twitter:image:alt" content="SANcha — hand-drawn matcha bowl logo">
+
+<link rel="icon" href="/sancha-preview/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/sancha-preview/assets/favicon.png?v=2">
+<link rel="apple-touch-icon" href="/sancha-preview/assets/favicon.png?v=2">
+<link rel="preload" as="image" href="assets/logo-dark.webp" type="image/webp" fetchpriority="high">
+<!-- Self-hosted fonts (same-origin, no external requests); preload above-the-fold weights.
+     Display = Super Waffles (brand font by fsuarez913, DaFont "100% Free" — free for
+     personal & commercial use; full font self-hosted, licence note in assets/fonts/).
+     Body = Bitter. Fredoka stays in the heading stack only as a graceful load-fallback. -->
+<link rel="preload" href="assets/fonts/superwaffles.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/bitter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/sancha-preview/assets/site.css">
+<script>
+/* Palette preview — override brand colours via URL params for quick exploration.
+   e.g.  ?yellow=ffefeb   (turns the page's light-yellow pink)   or
+         ?paper=ffefeb&maroon=6c2c25&matcha-deep=2e4034 (fine control).
+   Harmless when no param is present; this does NOT change the committed brand —
+   only the current view. Same idea as the existing ?tins_csv override. */
+(function () {
+  try {
+    var q = new URLSearchParams(location.search), root = document.documentElement;
+    function hex(v) { v = (v || "").trim().replace(/^#/, ""); return /^[0-9a-fA-F]{3,8}$/.test(v) ? "#" + v : null; }
+    // "yellow" shortcut = the page's light yellow (which is --paper and --lemon together).
+    var y = hex(q.get("yellow"));
+    if (y) { root.style.setProperty("--paper", y); root.style.setProperty("--lemon", y); }
+    ["matcha","matcha-deep","forest","cream","paper","charcoal","stone","muted","line","peach","blue","maroon","lemon"]
+      .forEach(function (name) { var c = hex(q.get(name)); if (c) root.style.setProperty("--" + name, c); });
+    // Separate product page: hide the homepage + show the product view before paint.
+    if (q.get("tin")) root.classList.add("product-mode");
+  } catch (e) {}
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SANcha",
+  "url": "https://sanchamatcha.co.uk/",
+  "logo": "https://sanchamatcha.co.uk/assets/logo-dark.png",
+  "image": "https://sanchamatcha.co.uk/assets/og-image.png",
+  "description": "SANcha — high-quality matcha for clean, steady energy. Founded by three friends in London. Shop IKI & YUAN tinned matcha, and wholesale supply.",
+  "email": "contact@sanchamatcha.co.uk",
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "GB"
+    }
+  },
+  "areaServed": "GB",
+  "slogan": "High-quality matcha for clean, steady energy"
+}
+</script>
+</head>
+<body id="top">
+
+<div id="site-nav"></div>
+
+<!-- Product detail page (filled by site-app.js when ?tin=<slug> is in the URL) -->
+<section id="product-page"><div class="wrap" id="product-page-inner"></div></section>
+
+<main>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="label">High-quality matcha · direct from tea farms in Zhejiang, China to London</span>
+      <h1>Premium matcha, <em>priced for everyday</em>.</h1>
+      <p class="lead">Great matcha shouldn&rsquo;t cost more just because everyone wants the same origin. We found it in China instead.</p>
+      <div class="hero-actions">
+        <a href="#tins" class="btn btn-solid">Explore the matcha</a>
+      </div>
+      <div class="hero-tags">
+        <div><i></i>Clean, sustained energy</div>
+        <div><i></i>No jitters or crash</div>
+        <div><i></i>Rich in antioxidants</div>
+      </div>
+    </div>
+    <div class="emblem-stage">
+      <picture><source srcset="assets/logo-dark.webp" type="image/webp"><img src="assets/logo-dark.png" alt="SANcha matcha emblem" class="emblem" fetchpriority="high"></picture>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Clean Energy, No Crash</span><span>Rich in Antioxidants</span><span>A Kinder Alternative to Coffee</span><span>Clean Energy, No Crash</span><span>Rich in Antioxidants</span><span>A Kinder Alternative to Coffee</span>
+  </div>
+</div>
+
+<section class="tins-sec" id="tins">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="label">Tinned Matcha · Our Hero Product</span>
+      <h2>Matcha should tell a story.</h2>
+      <p>Two distinct expressions of tea craftsmanship — one born from innovation and harmony, the other from purity and origin.</p>
+    </div>
+    <!-- Products below can be edited from a Google Sheet (see SHEET-SETUP.md).
+         When the sheet loads, these hard-coded cards are replaced automatically.
+         If the sheet is empty/unreachable, these stay as a safe fallback. -->
+    <div class="tins" id="tins-grid" data-sheet-products>
+      <div class="tin-card">
+        <div class="tin-badges"><span class="tin-badge is-new">New</span></div>
+        <div class="tin-top">
+          <div class="tin tin-iki"><div class="kanji">粋</div><div class="rom">IKI</div></div>
+          <div>
+            <h3>IKI</h3>
+            <div class="sub">Signature Blend</div>
+          </div>
+        </div>
+        <div class="tin-foot">
+          <span class="sizes">30g tin</span>
+          <span class="price">Price coming soon</span>
+        </div>
+      </div>
+      <div class="tin-card">
+        <div class="tin-badges"><span class="tin-badge is-new">New</span></div>
+        <div class="tin-top">
+          <div class="tin tin-yuan"><div class="kanji">源</div><div class="rom">YUAN</div></div>
+          <div>
+            <h3>YUAN</h3>
+            <div class="sub">Single Cultivar</div>
+          </div>
+        </div>
+        <div class="tin-foot">
+          <span class="sizes">30g tin</span>
+          <span class="price">Price coming soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="label">The Shop</span>
+      <h2>More ways to bring SANcha home.</h2>
+    </div>
+    <!-- Editable from a Google Sheet — see SHEET-SETUP.md (Shop tab). -->
+    <div class="cats" id="shop-grid" data-sheet-products>
+      <a class="cat" href="#tins">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="14" y="12" width="20" height="28" rx="3"/><path d="M17 12v-2h14v2"/><path d="M18 22h12"/></svg>
+        <h3>Tinned Matcha</h3>
+        <p>IKI &amp; YUAN, in 30g tins.</p>
+        <span class="soon">Prices coming soon</span>
+      </a>
+      <div class="cat">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 18h24l-2 22H14z"/><path d="M18 18a6 6 0 0 1 12 0"/></svg>
+        <h3>Merchandise</h3>
+        <p>Whisks, bowls and everyday SANcha essentials.</p>
+        <span class="soon">Prices coming soon</span>
+      </div>
+      <div class="cat">
+        <svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="10" y="16" width="28" height="20" rx="2"/><path d="M10 24h28M24 16v20"/><path d="M24 16c-3-6-9-4-9 0M24 16c3-6 9-4 9 0"/></svg>
+        <h3>Gift Cards</h3>
+        <p>Share the ritual — the easiest matcha gift.</p>
+        <span class="soon">Coming soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/sancha-preview/assets/site.js"></script>
+<script src="/sancha-preview/assets/site-app.js"></script>
+<script src="https://gateway.sumup.com/gateway/ecom/card/v2/sdk.js"></script>
+<script src="/sancha-preview/assets/checkout.js"></script>
+</body>
+</html>
